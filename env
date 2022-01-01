@@ -1,0 +1,4 @@
+PORT=3000
+DB_NAME=jawancars
+DB_USER=root
+DB_PASS=pass
