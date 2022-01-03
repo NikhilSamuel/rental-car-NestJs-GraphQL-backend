@@ -8,12 +8,12 @@ export class NewCarInput {
 
   @Field((type) => Int)
   @Max(1000)
-  @Min(10)
+  @Min(10, { message: 'Daily price cant be that low' })
   dailyPrice: number;
 
   @Field((type) => Int)
   @Max(10000)
-  @Min(1500)
+  @Min(1500, { message: 'Monthly price cant be that low' })
   monthlyPrice: number;
 
   @Field()
